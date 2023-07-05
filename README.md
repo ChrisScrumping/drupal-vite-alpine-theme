@@ -81,6 +81,6 @@ This theme was generated using the new D10 generate theme command:
 fin exec php core/scripts/drupal generate-theme mytheme
 ```
 
-## Using gulp
+### Using gulp
 
 It would be better if I could remove the dependency on gulp for moving and tidying up but I can't see how its possible using Vite, any suggestions? I have also only done limited testing on this so it's probably fragile.
