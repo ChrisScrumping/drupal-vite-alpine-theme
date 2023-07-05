@@ -1,0 +1,26 @@
+# Use the source path instead of destination. "scss/styles.scss" instead of "dist/css".
+# Paths will be altered for local or prod with hook_library_info_alter().
+global-styling:
+  vite: true
+  css:
+    theme:
+      assets/css/main.scss: {}
+
+global-js:
+  vite: true
+  js:
+    assets/js/main.js: {
+      attributes: {
+        type: 'module',  defer: true, async: true
+      }
+    }
+
+# vite:
+#   # By default true, if not set explicitly to false assumed true.
+#   enabled: true
+#   # Path to manifest.json, by default `dist/manifest.json`.
+#   manifest: dist/manifest.json
+#   # By default `<path_to_module|theme>/dist/`.
+#   baseUrl: '/themes/mytheme/dist/'
+#   # Vite dev server url, by default http://localhost:5173.
+#   devServerUrl: 'http://localhost:5173`

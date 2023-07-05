@@ -1,0 +1,6 @@
+<div {{ attributes }}>
+  {# Keep the outer div whenever possible it is a nice way to ensure the presence of "attributes" #}
+  {% block example_block %}
+    <h1 x-data="{ message: 'My name is {{name}}, I am {{age}}, I ❤️ Alpine and Drupal Components' }" x-text="message">Should not show</h1>
+  {% endblock %}
+</div>

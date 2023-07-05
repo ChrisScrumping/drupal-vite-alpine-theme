@@ -1,0 +1,21 @@
+{
+  "name": "crossover",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && gulp",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "sass": "^1.63.6",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "alpinejs": "^3.12.2",
+    "gulp-json-editor": "^2.5.6"
+  }
+}

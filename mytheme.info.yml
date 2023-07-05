@@ -1,0 +1,13 @@
+name: mytheme
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - core/normalize
+  - mytheme/global-styling
+  - mytheme/global-js
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.1.0'
+dependencies:
+  - vite:vite
