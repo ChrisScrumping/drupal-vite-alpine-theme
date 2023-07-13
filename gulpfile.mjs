@@ -4,7 +4,7 @@ import jeditor from 'gulp-json-editor';
 
 const distFolder = 'dist'
 
-function manifest() {
+async function manifest() {
   // Todo: Test with more complex component structure
   gulp.src('./' + distFolder +'/manifest.json')
     .pipe(jeditor(function (json) {
