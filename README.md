@@ -47,7 +47,7 @@ For convience the alpine component is already added to the ```web/themes/mytheme
 
 *note* ```--host``` is required when using docker containers so you can access the dev url.
 
-*note* ```devServerUrl``` can be updated to point to your local dev location
+*note* ```devServerUrl``` can be updated in ```mytheme.libraries.yml``` to point to your local dev location
 
 ## Production
 
