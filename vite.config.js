@@ -7,6 +7,7 @@ let files = new Map(
   ])
 );
 files.set('main', '/assets/js/main.js');
+files.set('styles', '/assets/css/main.scss');
 
 export default defineConfig({
   build: {
