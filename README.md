@@ -84,3 +84,33 @@ fin exec php core/scripts/drupal generate-theme mytheme
 ### Using gulp
 
 It would be better if I could remove the dependency on gulp for moving and tidying up but I can't see how its possible using Vite, any suggestions? I have also only done limited testing on this so it's probably fragile.
+
+
+## Issues
+
+### CORS
+
+#### Check CORS settings
+
+```
+fin drush php:eval "var_export(\Drupal::getContainer()->getParameter('cors.config'));"
+```
+
+#### Check webserver CORS
+
+Locally you can have issues with files used in Storybook, to resolve this you may need to add .htaccess file in the dist folder.
+
+Add to Gulp
+```
+async function htaccess() {
+  gulp.src('./assets/htaccess')
+    .pipe(rename( '.htaccess' ))
+    .pipe(gulp.dest(distFolder))
+  console.log('Added .htaccess');
+}
+```
+In assets/ create a file called ```htaccess```
+
+```
+Header set Access-Control-Allow-Origin "*"
+```
