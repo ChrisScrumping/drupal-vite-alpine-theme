@@ -1,13 +1,15 @@
 # Use the source path instead of destination. "scss/styles.scss" instead of "dist/css".
 # Paths will be altered for local or prod with hook_library_info_alter().
 global-styling:
-  vite: true
+  vite:
+    devServerUrl: 'http://172.17.0.1:5173'
   css:
     theme:
       assets/css/main.scss: {}
 
 global-js:
-  vite: true
+  vite:
+    devServerUrl: 'http://172.17.0.1:5173'
   js:
     assets/js/main.js: {
       attributes: {
