@@ -38,12 +38,16 @@ Finish off installing Drupal as normal at yourdomain.com/core/install.php and in
 Inside the theme folder
 
 ```
-yarn && yarn dev
+yarn && yarn dev --host
 ```
 
 This will install the npm packages and start the vite server, the [Vite Drupal Module](https://www.drupal.org/project/vite) uses the libraries to map the local files to the vite server (see network tab in dev tools). Now when you make a change to the CSS you should see it in Druapl instantly. Don't forget to clear the caches when setting this up.
 
 For convience the alpine component is already added to the ```web/themes/mytheme/templates/layout/page.html.twig``` file.
+
+*note* ```--host``` is required when using docker containers so you can access the dev url.
+
+*note* ```devServerUrl``` can be updated to point to your local dev location
 
 ## Production
 
