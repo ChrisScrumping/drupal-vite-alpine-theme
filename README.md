@@ -66,9 +66,12 @@ Gulp build which moves the component CSS files into the componenet folders (Drup
 
 When adding a new component you can use the command:
 ```
-fin drush generate theme:sdc:component 
+fin drush generate sdc:theme
+fin drush generate sdc:module
 ```
-If using Storybook you can apply the [Storybook patch](https://www.drupal.org/project/cl_generator/issues/3363708)
+Please note: https://www.drupal.org/project/cl_generator/issues/3365150#comment-15156427
+
+If using Storybook you can apply the [Storybook patch](https://www.drupal.org/project/cl_generator/issues/3363708). Currently awaiting update to work with CL Generator v3
 
 Once generated you need to let Vite know about the files in the main.js file ```import '../../components/alpine/alpine.scss'```. In this case we don't need to compile the JS but in theory you could use the same process.
 
