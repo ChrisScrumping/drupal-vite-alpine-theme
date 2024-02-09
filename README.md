@@ -1,3 +1,9 @@
+Archiving this repository as it is no longer relivant or the route I have chosen to take for a few reasons...
+
+[Drupal ](https://www.drupal.org/project/vite) now supports Vite 5
+Dropped AplineJS for just JS
+
+
 # My Theme
 
 Generated from starterkit_theme. Additional information on generating themes can be found in the [Starterkit documentation](https://www.drupal.org/docs/core-modules-and-themes/core-themes/starterkit-theme).
